@@ -244,10 +244,13 @@ h2 + p::first-letter {
     content: "";
     top: 50%;
     left: 50%;
-    width: 50%;
-    height: 180%;
+    width: 40%;
+    height: 200%;
+    filter: blur(20px);
     background: linear-gradient(90deg, var(--c-pink), var(--c-alert));
     transform: translate(-50%, -50%) rotate(45deg);
+    border-style: none !important;
+    border-color: transparent !important;
 }
 
 .card:hover::before {
@@ -268,9 +271,6 @@ h2 + p::first-letter {
     inset: 5px;
     background: var(--c-white);
 }
-/* .card:hover {
-    border-color: var(--c-alert) !important;
-} */
 
 
 /* button */
