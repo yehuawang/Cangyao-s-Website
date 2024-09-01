@@ -1,0 +1,389 @@
+:root{
+    --c-light: #eed9bc;
+    --c-light-secondary: #d2b7a1;
+    --c-dark: #292322;
+    --c-white: #ffffff;
+    --c-primary: #523e32;
+    --c-secondary: #444c4c;
+    --c-muted: #665e59;
+    --c-alert: #db7304;
+    --c-pink: #ff7b9c;
+    --c-dark-hover-focus: #ffc663;
+    --c-light-hover-focus: #5a5a3a;
+    --c-trans-bg: #eed9bccc;
+    --c-bg-img-link: url("./assets/mountains-8387889.jpg");
+    --c-nav-img-link: url("./assets/nature-3102762_1920.png");
+    --c-heading-img-cat: url("./assets/fuyao-pixel.png");
+    
+    
+    
+}
+
+.darkmode {
+    --c-light: #0b0b10;
+    --c-light-secondary: #233970;
+    --c-dark: #ececec;
+    --c-white: #000000;
+    --c-primary: #b2c9f6;
+    --c-secondary: #9492a4;
+    --c-muted: #646973;
+    --c-alert: #1450be;
+    --c-pink: #ff7b9c;
+    --c-dark-hover-focus: #ffc663;
+    --c-light-hover-focus: #729ebd;
+    --c-trans-bg: #0b0b10cc;
+    --c-bg-img-link: url("./assets/lake-4541454.jpg"); 
+    --c-nav-img-link: url("./assets/sky-6966721_1920.png"); 
+    --c-heading-img-cat: url("./assets/cat-pixel-grey.png");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+section {
+    padding: 60px 20px 0px;
+}
+
+body {
+    background-image: var(--c-bg-img-link);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
+p {
+    text-indent: 40px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--c-dark);
+}
+
+.lead {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--c-secondary);
+}
+
+.lead::first-letter {
+    text-transform: capitalize;
+}
+
+h2 + p::first-letter {
+    text-transform: capitalize !important;
+    font-size: x-large !important;
+}
+
+.custom-div {
+    background-color:var(--c-trans-bg);
+    word-wrap: break-word;
+    padding-top: 80px;
+}
+
+.custom-text-block {
+    padding: 10px 50px 10px 50px;
+}
+
+
+/* navbar */ 
+.navbar, .navbar-collapse{
+    width: 100vw !important;
+    background-image: var(--c-nav-img-link);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+}
+
+
+.navbar-brand,.nav-link, .dropdown-menu, .dropdown-item{
+    font-family: "Baskervville SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.navbar-brand {
+    color:var(--c-primary) !important;
+    font-size: 1.2em !important;
+}
+
+.nav-link {
+    color: var(--c-dark) !important; 
+    font-size: 1em !important;
+}
+
+.nav-link:hover,  .navbar-brand:hover{
+    color: var(--c-light-hover-focus) !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.toggler-icon {
+    position: relative;
+    color: var(--c-alert);
+}
+
+/* drop down */
+.dropdown-menu {
+    margin-top: -4px !important;
+    border: none !important;
+    background-color: var(--c-light-secondary) !important;
+}
+
+.dropdown-item {
+    color: var(--c-primary) !important;
+    
+    font-size: 1.2em !important;
+}
+
+.dropdown-item:hover {
+    background-color:var(--c-light) !important;
+    color:var(--c-primary) !important;
+}
+
+
+/* headings */
+.custom-flex-heading {
+    display: flex; 
+    padding-right: 60px;
+}
+
+.custom-flex-heading-img {
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    background-image: var(--c-heading-img-cat);
+    background-size: cover;
+}
+
+.custom-flex-heading-text {
+    color: var(--c-primary);
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-flex-heading-bar {
+    flex-grow: 1;
+    border-bottom-style: solid;
+    border-color: var(--c-alert);
+    border-width: 2px;
+}
+
+
+
+/* card */
+.card-title {
+    color:var(--c-primary) !important;
+    font-family: "Kode Mono", monospace !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    z-index: 1;
+}
+
+.card-footer {
+    background: none !important;
+    border-color: var(--c-alert) !important;
+    z-index: 1;
+}
+
+.card-img-top {
+    height: 200px;
+    padding: 10px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.card div{
+    padding: 10px;
+    z-index: 1 !important;
+}
+
+.card {
+    background-color: var(--c-white) !important;
+    cursor: pointer;
+    overflow: hidden !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+/* adding hover effect to card */
+.card::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 180%;
+    background: linear-gradient(90deg, var(--c-pink), var(--c-alert));
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.card:hover::before {
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    inset: 5px;
+    background: var(--c-white);
+}
+/* .card:hover {
+    border-color: var(--c-alert) !important;
+} */
+
+
+/* button */
+.btn-primary {
+    background-color:var(--c-primary) !important;
+    border-style: none !important;
+    color: var(--c-light) !important;
+    font-family: "Kode Mono", monospace !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+
+.btn-primary:hover {
+    background-color: var(--c-alert) !important;
+    color: var(--c-white) !important;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: var(--c-primary);
+}
+
+.dark-mode-toggle:hover {
+    color: var(--c-dark);
+}
+
+/* grid */
+.row {
+    margin: 0px 30px!important;
+}
+
+.text-justified {
+    text-align: justify;
+}
+
+
+/* sign up and log in pages */
+.signup-wrapper {
+    background-color: var(--c-light);
+    height: calc(100vh - 50px) !important;
+    width: max(30%, 600px);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    overflow: hidden;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12pt;
+    color: var(--c-dark);
+    text-align: center;
+    border-radius: 3% 0 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-wrapper h1 {
+    font-family: "Baskervville SC", serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.signup-wrapper p {
+    text-indent: 0px;
+}
+
+.signup-wrapper form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: min(400px, 100%);
+}
+
+.signup-wrapper input {
+    margin-right: 7px;
+}
+
+
+
+/* fonts */
+
+.kode-mono-code {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+
+
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+ 
+
