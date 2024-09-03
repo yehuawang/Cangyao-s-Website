@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+Mono:wght@100..900&family=Reenie+Beanie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./assets/shanghai-night-4694750.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: "Noto Sans Mono", monospace;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    margin: 20px;
+    padding: 0 30px;
+    height: auto;
+    backdrop-filter: blur(2px);
+    background-color: rgba(41, 41, 41, 0.462);
+    box-sizing: border-box;
+    border: 0.02em solid white;
+    border-radius: 10px;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.streak {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.streak div{
+    margin-top: 0.5em;
+}
+
+#streakCount {
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0.2em;
+    border: 0.02em solid white;
+    text-align: center;
+}
+
+#ContinueStudyPrompt {
+    display: none;
+    margin-top: 0.5em;
+}
+
+#StartStudyPrompt {
+    margin-top: 0.8em;
+}
+.tomato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer #clock {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.date div {
+    margin: 0.5em;
+    padding: 0.2em;
+}
+
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.slider-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-field {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffb236;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sliderText {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: center;
+    font-family: "Nerko One", cursive;
+    font-size: 1.5em;
+    width: 100px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.618);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menuBtn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.quotes {
+    width: max(60%, 300px);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    font-family: "Reenie Beanie", cursive;
+}
+
+.quoteText {
+    padding: 25px 40px 25px 50px;
+    font-size: 2em;
+}
+
+.quoteAuthor {
+    font-size: 3em;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .quoteText {
+        font-size: 1.2em;
+        padding: 15px 5px 15px 10px;
+    }
+    .quoteAuthor {
+        font-size: 1.5em;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .quoteText {
+        font-size: 1.2em;
+        padding: 15px 5px 15px 10px;
+    }
+    .quoteAuthor {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Clock!</title>
+    <link rel="stylesheet" href="tomato.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="date block">
+            <div>
+                2024 Sep 01 Sun
+            </div>
+            <div id="current-time">
+                00:00:00
+            </div>
+        </div>
+        
+        <div class="tomato">
+            <div class="block">
+                <div class="streak">
+                    <div id="StartStudyPrompt">
+                        start your first study block now!
+                    </div>
+                    <div id="ContinueStudyPrompt">
+                        you have completed <span id="streakCount"></span> study blocks today!
+                    </div>
+                </div>
+                <div class="timer">
+                    <div id="clock">
+                        00:00
+                    </div>
+                </div>
+            </div>
+            <div class="menu block">
+                <div class="slider-box">
+                    <div class="slider-field">
+                        <div>10</div>
+                        <input type="range" min="10" max="60" value="25" step="5" class="slider" id="slider">
+                    <div>60</div>
+                    </div>
+                    
+                    <div class="sliderText">
+                        <span>25</span> minutes
+                    </div>
+                </div>
+                <div class="buttonGroup">
+                    <button class="menuBtn" id="pause">Pause</button>
+                    <button class="menuBtn" id="reset">Reset</button>
+                    <button class="menuBtn" id="start">Start</button>
+                </div>
+            </div>
+        </div>
+        <div class="quotes block">
+            <p class="quoteText">
+                Success is the sum of small efforts, repeated day in and day out. The hard work you put in today builds the foundation for the future you dream of tomorrow.
+            </p>
+            <p class="quoteAuthor">
+                - Cangyao
+            </p>
+        </div>
+    </div>
+    <script src="tomato.js"></script>
+</body>
+</html>
