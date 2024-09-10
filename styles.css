@@ -230,6 +230,11 @@ h2 + p::first-letter {
     z-index: 1 !important;
 }
 
+.card-text {
+    text-align: justify;
+    text-indent: 0 !important;
+}
+
 .card {
     background-color: var(--c-white) !important;
     cursor: pointer;
@@ -385,5 +390,15 @@ h2 + p::first-letter {
     font-style: normal;
   }
   
- 
 
+/* project drop down menu */
+.project-dropdown .dropdown-item {
+    font-family: 'Kode Mono', Courier, monospace;
+    font-size: 0.8em !important;
+}
+
+.project-dropdown .project-divider {
+    font-size: 1.2em;
+    padding-left: 10px;
+    color: var(--c-dark);
+}
