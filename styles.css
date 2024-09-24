@@ -105,7 +105,12 @@ h3 + ul {
 .custom-div {
     background-color:var(--c-trans-bg);
     word-wrap: break-word;
-    padding-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#intro {
+  padding-top: 70px;
 }
 
 .custom-text-block {
